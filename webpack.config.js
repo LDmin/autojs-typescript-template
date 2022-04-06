@@ -8,13 +8,17 @@ module.exports = (env) => {
       modules: ['./node_modules'],
       extensions: ['.ts', '.tsx', '.js', '.jsx'],
       alias: {
-        src: path.resolve(__dirname, 'src'),
+        '@assets': path.resolve(__dirname, 'src/assets'),
+        '@base': path.resolve(__dirname, 'src/base'),
+        '@main': path.resolve(__dirname, 'src/main'),
+        '@utils': path.resolve(__dirname, 'src/utils'),
       },
     },
     mode: 'development',
     devtool: 'inline-source-map',
     entry: {
-      main: './src/main/index.ts',
+      main: './src/main/main.ts',
+      mihoyo: './src/main/mihoyo.ts',
     },
     output: {
       path: path.resolve(__dirname, 'dist'),

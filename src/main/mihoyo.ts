@@ -39,3 +39,6 @@ export default class Mihoyo extends Project {
     $selector().id("closeImageButton").findOne().click();
   }
 }
+
+// run
+new Mihoyo().start();
