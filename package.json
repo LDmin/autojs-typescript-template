@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/main.js",
   "scripts": {
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "checkout": "git checkout master .vscode src/base src/utils tsconfig.json webpack.config.js"
   },
   "keywords": [],
   "author": "",

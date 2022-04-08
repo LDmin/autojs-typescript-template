@@ -21,7 +21,9 @@ module.exports = (env) => {
       const entry = {}
       const mainPath = path.join(__dirname, 'src/main')
       fs.readdirSync(mainPath).forEach(function (name) {
-        entry[path.basename(name, path.extname(name))] = './src/main/' + name
+        if (fs.statSync(path.join(mainPath, name)).isFile()) {
+          entry[path.basename(name, path.extname(name))] = './src/main/' + name
+        }
       });
       return entry
     })(),
