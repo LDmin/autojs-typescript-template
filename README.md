@@ -57,7 +57,7 @@ npm run watch
    │   │   └── 1.txt
    │   ├── base (可选) 放置基础类
    │   │   └── project.ts
-   │   ├── main 项目入口
+   │   ├── main 项目入口, 自动扫描 main 文件夹下的文件作为入口文件
    │   │   ├── main.ts 所有项目的入口
    │   │   └── mihoyo.ts 单个项目的入口
    │   └── utils 工具函数
