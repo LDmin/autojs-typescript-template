@@ -1,5 +1,6 @@
+const fs = require('fs')
 const path = require('path')
-const webpack = require('webpack')
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = (env) => {
@@ -16,10 +17,14 @@ module.exports = (env) => {
     },
     mode: 'development',
     devtool: 'inline-source-map',
-    entry: {
-      main: './src/main/main.ts',
-      example: './src/main/example.ts',
-    },
+    entry: (function () {
+      const entry = {}
+      const mainPath = path.join(__dirname, 'src/main')
+      fs.readdirSync(mainPath).forEach(function (name) {
+        entry[path.basename(name, path.extname(name))] = './src/main/' + name
+      });
+      return entry
+    })(),
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: '[name].bundle.js',
@@ -34,6 +39,7 @@ module.exports = (env) => {
       ],
     },
     plugins: [
+      new CleanWebpackPlugin(),
       new CopyWebpackPlugin({
         patterns: [
           { from: "./src/assets", to: "assets" },
