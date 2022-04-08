@@ -18,7 +18,7 @@ module.exports = (env) => {
     devtool: 'inline-source-map',
     entry: {
       main: './src/main/main.ts',
-      mihoyo: './src/main/mihoyo.ts',
+      example: './src/main/example.ts',
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
