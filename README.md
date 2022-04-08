@@ -2,7 +2,12 @@
 
 使用 typescript 开发 autojs
 
-### 1. 安装
+### 分支
+
+- master 包含一些示例项目
+- template 一个纯净的 autojs8 模板, 可用于初始化项目
+
+### 安装
 
 ```
 npm install
@@ -14,13 +19,13 @@ npm install
 yarn
 ```
 
-### 2. 启动
+### 启动
 
 ```
 npm run watch
 ```
 
-### 3. 打包
+### 打包
 
 研究中...
 
