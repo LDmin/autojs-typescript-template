@@ -29,12 +29,15 @@ npm run watch
 
 在 dist 目录下的 xxx.bundle.js 文件, 使用 autojs 打包成 apk 即可。
 
-### 特色功能及要做的事
+### 特色功能
 
 - [x] webpack 打包，使用 typescript 开发，可以使用众多 node 包
 - [x] 通过不同的文件入口，打包成不同的项目
 - [x] 通过 tsx 编写 ui layout
-- [ ] 把 autojs-loader 发布到 npm 包, 在线安装
+
+### 要做的事
+
+- [x] 把 autojs-ui-loader 发布到 npm 包, 在线安装
 
 ### 说明
 

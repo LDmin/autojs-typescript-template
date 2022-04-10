@@ -298,6 +298,11 @@ array-uniq@^1.0.1:
   resolved "https://registry.npmmirror.com/array-uniq/-/array-uniq-1.0.3.tgz#af6ac877a25cc7f74e058894753858dfdb24fdb6"
   integrity sha512-MNha4BWQ6JbwhFhj03YK552f7cb3AzoE8SzeljgChvL1dl3IcvggXVz1DilzySZkCja+CXuZbdW7yATchWn8/Q==
 
+autojs-ui-loader@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/autojs-ui-loader/-/autojs-ui-loader-1.0.0.tgz#c0b993e03d8009b3977a69660999d78424476d8b"
+  integrity sha512-OZWTUyH7dWeQ/Rmr4geX5Oq3GzPoIweVYKz+StlPETp+RlaC2Awa5ESb8pcIjfJZ63eHn9LVeMPKRLIgdsFYWg==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmmirror.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
