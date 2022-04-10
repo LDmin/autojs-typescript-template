@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+const { AutoUIPlugin } = require('autojs-ui-loader')
 
 module.exports = (env) => {
   return {
@@ -38,9 +39,18 @@ module.exports = (env) => {
           use: 'ts-loader',
           exclude: /node_modules/,
         },
+        {
+          test: /\.tsx?$/,
+          use: 'autojs-ui-loader',
+          exclude: /node_modules/,
+        },
       ],
     },
     plugins: [
+      new AutoUIPlugin({
+        buildPath: path.join(__dirname, 'dist'),
+        fileFlag: 'bundle.js',
+      }),
       new CleanWebpackPlugin(),
       new CopyWebpackPlugin({
         patterns: [
