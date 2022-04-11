@@ -38,7 +38,7 @@ npm run watch
 ### 要做的事
 
 - [x] 把 autojs-ui-loader 发布到 npm 包, 在线安装
-- [ ] 完善别名，比如使用 '@base/project' 代替 '../base/project'
+- [x] 完善别名，比如使用 '@base/project' 代替 '../base/project'
 
 ### 说明
 

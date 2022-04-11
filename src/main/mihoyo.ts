@@ -1,5 +1,5 @@
-import Project from "../base/project";
-import { clickTextCenter } from "../utils";
+import Project from "@base/project";
+import { clickTextCenter } from "@utils/index";
 
 export default class Mihoyo extends Project {
   packageName = "com.mihoyo.hyperion";
