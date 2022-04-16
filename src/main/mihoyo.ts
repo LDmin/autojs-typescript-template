@@ -1,3 +1,5 @@
+// 此项目为示例项目，会独立打包成一个 js 文件
+
 import Project from "@base/project";
 import { clickTextCenter } from "@utils/index";
 
